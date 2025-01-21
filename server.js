@@ -31,6 +31,10 @@ pool.getConnection((err, connection) => {
   connection.release();
 });
 
+app.get('/', (req, res) => {
+  res.send('Welcome to BeautyFinder API');
+});
+
 app.get('/search', (req, res) => {
   const searchTerm = req.query.query;
 
