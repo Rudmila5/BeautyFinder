@@ -4,7 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     : 'http://localhost:4000';
 
   const urlParams = new URLSearchParams(window.location.search);
-  const searchQuery = urlParams.get('query');
+  const searchQuery = urlParams.get('search');
+
 
   if (searchQuery && searchQuery.trim() !== '') {
     const searchInput = document.getElementById('search-input');
