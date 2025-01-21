@@ -10,15 +10,13 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 
-const pool = mysql.createPool({
-  host: process.env.MYSQL_HOST || 'monorail.proxy.rlwy.net',
-  user: process.env.MYSQL_USER || 'root',
-  password: process.env.MYSQL_PASSWORD || 'yiIqbIUFsCFBshHtqlFyEraZAOcqKaly',
-  database: process.env.MYSQL_DATABASE || 'railway',
-  port: process.env.MYSQL_PORT || 21049,
-  connectionLimit: 10,
-  connectTimeout: 30000
+console.log('Database Config:', {
+  host: process.env.MYSQL_HOST,
+  user: process.env.MYSQL_USER,
+  database: process.env.MYSQL_DATABASE,
+  port: process.env.MYSQL_PORT,
 });
+
 
 pool.getConnection((err, connection) => {
   if (err) {
