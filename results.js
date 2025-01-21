@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   const apiBaseURL = window.location.origin.includes('github.io') 
-    ? 'beautyfinder-production.up.railway.app'  
+    ? 'https://beautyfinder-production.up.railway.app'  
     : 'http://localhost:4000';
 
   const urlParams = new URLSearchParams(window.location.search);
