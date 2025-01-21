@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const apiBaseURL = window.location.origin.includes('github.io') 
-    ? 'http://beautyfinder.railway.app'  // Replace with your Railway app public URL
-    : 'http://localhost:4000';            // For local development
+    ? 'beautyfinder-production.up.railway.app'  
+    : 'http://localhost:4000';
 
   const urlParams = new URLSearchParams(window.location.search);
   const searchQuery = urlParams.get('query');
