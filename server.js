@@ -1,5 +1,4 @@
 require('dotenv').config();
-
 const express = require('express');
 const mysql = require('mysql2');
 const cors = require('cors');
@@ -10,17 +9,19 @@ const PORT = process.env.PORT || 4000;
 app.use(cors());
 app.use(express.json());
 
-console.log('Database Config:', {
-  host: process.env.MYSQL_HOST,
-  user: process.env.MYSQL_USER,
-  database: process.env.MYSQL_DATABASE,
-  port: process.env.MYSQL_PORT,
+const pool = mysql.createPool({
+  host: process.env.MYSQL_HOST || 'monorail.proxy.rlwy.net',
+  user: process.env.MYSQL_USER || 'root',
+  password: process.env.MYSQL_PASSWORD || 'yiIqbIUFsCFBshHtqlFyEraZAOcqKaly',
+  database: process.env.MYSQL_DATABASE || 'railway',
+  port: process.env.MYSQL_PORT || 21049,
+  connectionLimit: 10,
+  connectTimeout: 30000
 });
-
 
 pool.getConnection((err, connection) => {
   if (err) {
-    console.error('Database connection error: ', err.message);
+    console.error('Database connection error:', err.message);
     return;
   }
   console.log('Database connected!');
