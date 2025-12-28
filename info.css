@@ -1,0 +1,138 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding-top: 0;
+  }
+  
+  .topnav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 10px 0;
+    margin-bottom: 0;
+  }
+  
+  .topnav a {
+    color: black;
+    text-decoration: none;
+    font-size: 23px;
+    font-family: "Nunito", serif;
+    padding: 10px 20px; 
+  }
+  
+  .topnav img.LogoHeader {
+    max-height: 200px; 
+    object-fit: contain;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  
+  .topnav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container {
+    background-color: #d9d9d9;
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  
+  .container h1 {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    padding:1.5%;
+  }
+  
+  .container h2 {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:180%;
+    margin-left:2.5%;
+    margin-right:2.5%;
+  }
+
+  .container h3 {
+    font-family: "Nunito", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size:180%;
+    margin-left:2.5%;
+    margin-right:2.5%;
+  }
+
+  @media screen and (max-width: 767px) {
+    .topnav {
+      flex-direction: column; 
+      padding: 15px 0; 
+    }
+  
+    .topnav a {
+      font-size: 18px; 
+      padding: 20px 0; 
+    }
+  
+    .topnav img.LogoHeader {
+      max-height: 150px; 
+    }
+  
+    .container {
+      margin-right: 2%;
+      margin-left: 2%;
+    }
+  
+    .container h1 {
+      font-size: 1.5rem; 
+      padding: 10px;
+    }
+  
+    .container h2, .container h3 {
+      font-size: 1.5rem; 
+      margin-left: 1.5%;
+      margin-right: 1.5%;
+    }
+  }
+  
+ 
+  @media screen and (max-width: 480px) {
+    .topnav a {
+      font-size: 20px; 
+      padding: 8px 0; 
+    }
+  
+    .topnav img.LogoHeader {
+      max-height: 120px; 
+    }
+  
+    .container {
+      margin-right: 1%;
+      margin-left: 1%;
+    }
+  
+    .container h1 {
+      font-size: 1.2rem; 
+    }
+  
+    .container h2 {
+      font-size: 1.2rem; 
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+
+    .container h3 {
+        font-size: 1.2rem; 
+        margin-left: 1%;
+        margin-right: 1%;
+      }
+  }

@@ -1,0 +1,20 @@
+{
+    "sqltools.connections": [
+        {
+            "mysqlOptions": {
+                "authProtocol": "default",
+                "enableSsl": "Disabled"
+            },
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 3306,
+            "driver": "MySQL",
+            "name": "IngredientFinder Connection",
+            "group": "My Databases",
+            "database": "ingredientfinder",
+            "username": "root",
+            "connectionTimeout": 10,
+            "askForPassword": true
+        }
+    ]
+}

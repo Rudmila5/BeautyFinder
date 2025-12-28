@@ -1,0 +1,221 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  margin: 0;
+  padding-top: 0;
+}
+
+.topnav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin-bottom: 0;
+}
+
+.topnav a {
+  color: black;
+  text-decoration: none;
+  font-size: 23px;
+  font-family: "Nunito", serif;
+  padding: 10px 20px;
+}
+
+.topnav img.LogoHeader {
+  max-height: 200px;
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.topnav div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-bar {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  font-size: 16px;
+  width: 70%;
+  max-width: 400px;
+  margin-right: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-bar button:hover {
+  background-color: #000000;
+}
+
+.container {
+  width: 80%;
+  margin: 40px auto;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 210%;
+  color: Black;
+  margin-left: -5%;
+  font-family: "Nunito", serif;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.product-card {
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+}
+
+.product-title a {
+  color: black;
+  text-decoration: none;
+}
+
+.product-title a:hover {
+  text-decoration: underline;
+}
+
+.product-brand,
+.product-category,
+.product-ingredient {
+  font-size: 1rem;
+  color: #555;
+}
+
+.product-description {
+  font-size: 0.9rem;
+  color: #666;
+  display: none;
+  margin-top: 10px;
+}
+
+.show-description {
+  cursor: pointer;
+  color: Black;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .topnav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .topnav a {
+    padding: 10px 0;
+  }
+
+  .search-bar input {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .search-bar button {
+    width: 90%;
+    max-width: 350px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .container h1 {
+    font-size: 1.8rem;
+    margin-left: 0;
+  }
+
+  .product-list {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .product-title {
+    font-size: 1.3rem;
+  }
+
+  .product-brand {
+    font-size: 0.9rem;
+  }
+
+  .product-category {
+    font-size: 0.9rem;
+  }
+
+  .product-ingredient {
+    font-size: 0.9rem;
+  }
+
+  .product-description {
+    font-size: 0.8rem;
+  }
+
+  .show-description {
+    font-size: 0.9rem;
+  }
+
+  .search-bar {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .search-bar input {
+    padding: 10px;
+    font-size: 16px;
+    width: 70%;
+    max-width: 400px;
+    margin-right: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+  }
+
+  .search-bar button {
+    padding: 10px 15px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: auto; 
+  }
+
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Results</title>
+  <link rel="stylesheet" href="results.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Navigation Bar -->
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="#"><img class="LogoHeader" src="BeautyFinderTitle2.PNG" alt="Beauty Finder Logo"></a>
+    <a href="Info.html">Info</a>
+  </div>
+
+  <!-- Search Form -->
+  <form id="searchForm" class="search-bar">
+    <input type="text" name="search" id="searchInput" placeholder="Start typing to search..." required>
+    <button type="submit">Search</button>
+  </form>
+
+  <div class="container">
+    <h1>Search Results</h1>
+    <div id="loading" class="loading-message"></div> <!--Loading Message is inputted here-->
+    <div id="results-container" class="product-list">
+    </div>
+  </div>
+
+  <script src="results.js"></script>
+
+</body>
+
+</html>
+
